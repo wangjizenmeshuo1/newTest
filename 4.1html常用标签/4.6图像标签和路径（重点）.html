@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>图像标签和路径</title>
+	</head>
+	<body>
+		<!-- 1.图像标签 -->
+		<!--
+	  在html标签中，img标签用于定义html页面中的图像
+	  <img src="图像url"/>
+	  image 图像
+	  src是img标签的必须属性，它用于指定图像文件的路径和文件名
+	  alt 		文本属性 替换文本，图像不能显示的文字
+	  title		文本属性 提示文本鼠标放在图像上，显示的文字
+	  width		像素属性 设置图像的宽度
+	  height	像素属性 设置图像的高度
+	  border 	像素属性	设置图像的边框粗细
+	  注意点：
+	  1.图像标签可以拥有多个属性，必须写在标签名后面
+	  2.属性不分前后顺序，标签名与属性，属性与属性之间均以空格分开。
+	  -->
+		<h1>图像标签的使用:</h1>
+		<img src="绿宝石.jpg" alt="绿宝石" title="绿宝石" width="400" border="2" />
+		<!-- 宽度和高度修改一个，另一个属性等比例缩放 -->
+		<!-- 2.路径  -->
+		<!-- 
+	  分为：
+	  1.相对路径
+	  2.绝对路径
+	   -->
+		<!-- 1.相对路径 -->
+		<!-- 
+		以引用文件所在位置为参考基础，而建立出的目录路径
+		这里简单来说，图片相对于html页面的位置
+		同一路径		  图像位于html文件同一级 如
+		下一级路径	/ 图像位于html文件下一级
+		上一级路径  ../	图像位于html文件上一级
+		-->
+		<h1>路径的使用</h1>
+		下一级<br>
+		<img src="c'sgo素材/0100835c2ccb6ca80121df903e0cea.png@1280w_1l_2o_100sh.png" alt="" width="200"><br>
+		上一级<br>
+		<img src="../../image/史迪仔.jpg" alt="" width="200"><br>
+		<!-- 2.绝对路径 -->
+		<!-- 可以用网页中的图片绝对地址 -->
+		<img src="c'sgo素材/血腥运动.jpg" alt="" width="200">
+	</body>
+</html>
